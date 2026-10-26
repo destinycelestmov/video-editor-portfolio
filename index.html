@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Destiny Jimenez | Video Editor + Visual Storyteller</title>
+<meta name="description" content="Portfolio of Destiny Jimenez, a video editor and visual storyteller. Commercial ads, short-form content and cinematic edits.">
+<meta name="theme-color" content="#5B464D">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Destiny Jimenez | Video Editor + Visual Storyteller">
+<meta property="og:description" content="Commercial ads, short-form content and cinematic edits by Destiny Jimenez.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/bernier-shade.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/peignot.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="cover" id="top">
+ <div class="wrap" style="display:flex;flex-direction:column;flex:1">
+  <nav class="nav" aria-label="Main"><a href="#about">About</a><a href="#work">My Work</a><a href="#contact">Contact</a></nav>
+  <div class="coverGrid">
+   <div>
+    <p class="issue" id="issue"></p>
+    <h1 id="name" aria-label="Destiny Jimenez"></h1>
+    <h2 class="coverTitle" id="coverTitle"></h2>
+    <p class="lede" id="tagline"></p>
+    <a class="btn" href="#work">See my work</a>
+   </div>
+   <div class="tvWrap"><svg class="star s1" viewBox="0 0 40 40"><path d="M20 0C22 12 28 18 40 20 28 22 22 28 20 40 18 28 12 22 0 20 12 18 18 12 20 0Z"/></svg><div class="tv" id="tv" aria-hidden="true"><div class="tvScreenMask"><div class="tvScreen" id="tvScreen"><video class="ch on" id="chA" muted playsinline preload="auto"></video><video class="ch" id="chB" muted playsinline preload="auto"></video><canvas class="noise" id="noise" width="128" height="96"></canvas><div class="crt"></div><div class="osd" id="osd"></div></div></div><img class="tvImg" alt="" src="assets/img/tv.webp" width="640" height="640"></div><svg class="star s2" viewBox="0 0 40 40"><path d="M20 0C22 12 28 18 40 20 28 22 22 28 20 40 18 28 12 22 0 20 12 18 18 12 20 0Z"/></svg><button class="tvPause" id="tvPause" type="button" aria-pressed="false">Pause channels</button></div>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="about" id="about" aria-labelledby="aboutH">
+ <div class="wrap aboutGrid">
+  <figure class="photo" id="photo"></figure>
+  <div>
+   <h2 id="aboutH">About me</h2>
+   <p class="intro" id="aboutIntro"></p>
+   <div class="cols" id="aboutCols"></div>
+  </div>
+ </div>
+</section>
+
+<section class="work on-cream" id="work" aria-labelledby="workH">
+ <div class="wrap">
+  <div class="workHead">
+   <h2 id="workH">My Work</h2>
+   <p id="workNote"></p>
+  </div>
+  <div class="cabinet" id="cabinet"></div>
+ </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contactH">
+ <div class="wrap">
+  <h2 id="contactH">Let’s work together!</h2>
+  <div class="contactGrid">
+   <p class="lede" id="invite"></p>
+   <ul class="clist" id="clist"></ul>
+  </div>
+  <footer>
+   <span id="copy"></span>
+   <a href="#top">Back to the cover</a>
+  </footer>
+ </div>
+</section>
+</main>
+
+<noscript>
+  <p style="position:relative;z-index:60;background:#FFFBCC;color:#53141F;padding:1rem;margin:0;font-family:sans-serif">
+    This portfolio needs JavaScript to show my work. Please contact me at
+    <a href="mailto:destinycelest.mov@gmail.com">destinycelest.mov@gmail.com</a>.
+  </p>
+</noscript>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
